@@ -1,4 +1,23 @@
 # devops-netology
-lets start
-Добрый день, данная часть задания абсолютномне непонятна и что конкретно требуется сделать, вопрос в чате slack не получил ответа, мы добавляем два файла .gitignore? в директории tarrform должен бытьсвой .getignore с агалогичным содержанием данным в примере с github? 
-В файле README.md опишите своими словами какие файлы будут проигнорированы в будущем благодаря добавленному .gitignore. - какой именно, если мы добавляем два файла .gitignore?	
+**/.terraform/*
+# Игнорирует собственные директории terraform в любом расположении
+
+*.tfstate
+*.tfstate.*
+# Игнорирует файлы с расширением .tfstate, *.tfstate.* игнорирует любой файл или директорию чье имя включает в себя .tfstate.
+
+crash.log
+# Игнорирует любые файлы с именем crash.log
+
+*.tfvars
+# Игнорирует все файлы с расширением .tfvars
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# Игнорирует любые файлы с именами override.tf, override.tf.json, а так же файлы включающие в свое имя _override.tf, _override.tf.json
+
+.terraformrc
+terraform.rc
+# Игнорирует файлы с именами .terraformrc, terraform.rc
