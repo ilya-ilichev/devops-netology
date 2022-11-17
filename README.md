@@ -1,5 +1,4 @@
-# devops-netology
-<<<<<<< HEAD
+
 **/.terraform/*
 # Игнорирует собственные директории terraform в любом расположении
 
